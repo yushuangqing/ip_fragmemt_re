@@ -632,57 +632,6 @@ void insert_sort(MyList *list, void *data, int (*cmp_offset)(void *, void *), vo
 		}
 	}	
 }
-/*
-   void delete_node(MyList *list, MyNode *p, void (*free_data_1)(void *))
-   {
-
-   if(list->length == 0)
-   {
-   return;
-   }	
-   else if(list->length == 1)
-   {
-
-
-   myListRemoveDataAtLast(list);
-   return;
-   }
-   else
-   {
-
-   MyNode *p1 = list->first;
-   while(p1)
-   {
-   if(p == p1)
-   {
-   if(p1 == list->first)
-   {
-   myListRemoveDataAtFirst(list);
-   return;
-   }
-   else if(p1 == list->last)
-   {
-   myListRemoveDataAtLast(list);
-   return;
-   }
-   else
-   {
-   p1->prior->next = p1->next;
-   p1->next->prior = p1->prior;
-   (*free_data_1)(p1->data);
-   free(p1);
-   p1 = NULL;
-   (list->length)--;
-   }
-   }
-   else
-   {
-   p1 = p1->next;
-   }
-   }
-   }
-   }
- */
 
 
 void delete_node(MyList *list, MyNode *p, void (*free_data_1)(void *))

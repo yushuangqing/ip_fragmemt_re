@@ -1,5 +1,7 @@
-#ifndef LIST_H_INCLUDED
-#define LIST_H_INCLUDED
+#ifndef LIST_H
+#define LIST_H
+
+
 #include <stdio.h>
 #include <sys/types.h>  
 
